@@ -46,7 +46,7 @@ footer {
     width: 80%;
     text-align: center;
 }
-
+/* ----------acceuil----------- */
 .acceuil {
   background-image: url(principale.jpg);
   /* Full height */
@@ -64,6 +64,64 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.apropos-img img{
-    width: 20%;
+/* ----- à propos ------------- */
+.container-relative{
+    position: relative;
 }
+.espace-blanc{
+    height: 100px;
+}
+.espace-bleu{
+    height: 200px;
+    background-color:#38b6ff ;
+}
+
+#apropos-img img{
+    width: 70%;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.apropos-p{
+    width: 50%;
+    height: 200px;
+    padding:0 5px;
+    text-align: center;
+    background-color: white;
+    /* background-color: blue; */
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 50px;
+}
+.apropos-p p{
+    font-size: .7em;
+
+}
+.apropos-p button{
+    background-color: #38b6ff;
+    border: unset;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.contact{
+    text-align: center;
+    padding: 5% 0;
+    background-image: url(contact.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.contact form{
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    width: 70%;
+    height: 130px;
+
+    
+}
+
