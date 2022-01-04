@@ -1,1 +1,40 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* -------------header------------ */
+.flex-container{
+    display: flex;
+}
+header,footer{
+    background-color: black;
+    
+}
+header{
+    justify-content: space-between;
+    padding: 5%;
+}
+.logores{
+    width: 20%;
+   
+}
+ #hamburgermenu{
+    height: 10px; 
+    /* centrer verticalement */
+    align-self: center;
+}
+/* --------footer---------- */
+footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    
+}
+.icons{
+    width: 60%;
+    justify-content: space-around;
+    padding-top: 10%;
+}
