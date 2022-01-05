@@ -239,9 +239,7 @@ a:active{
 /* end style dstart cards  */
 
  /* sart  online user  */
-
- /* end   online user */
-.donline{
+ .donline{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin-top: 16px;
   margin-left: 5px;
@@ -255,14 +253,38 @@ a:active{
 }
 .dash-user img{
   margin: 5px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 .dash-user {
 display: flex;
 align-items: center;
 }
+ /* end   online user */
 
+ /* sart style  plate */
 
+.dash-plate{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 5px;
+  height: 10%;
+  border-radius:5px;
+  display: flex;
+align-items: center;
+justify-content: space-around;
+} 
+.dash-plate img{
+  border-radius: 50%;
+}
+.dash-plate1{
+  display: flex;
+}
+.dash-plate2{
+  display: flex;
+}
+.dash-plate3{
+  display: flex;
+}
+/* sart style  plate */
 
 
 
