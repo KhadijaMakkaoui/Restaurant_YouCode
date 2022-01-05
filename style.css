@@ -120,8 +120,14 @@ footer {
     margin: 0 auto;
    
     width: 70%;
-    height: 130px;
-
-    
+    height: 150px; 
+    background-color: rgba(0, 0, 0, 0.534);
+}
+input,textarea{
+    border: unset;
+    border-radius: 5px;
+}
+.contact h3{
+    color: white;
 }
 
