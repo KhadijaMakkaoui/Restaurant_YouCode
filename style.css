@@ -1,7 +1,3 @@
-/* =================================
-   = start Dashboard-Administrateur=
-   ================================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +5,9 @@
   font-family: sans-serif;
   text-decoration: none;
 }
+/* _________________________
+         Landing Page
+ ______________________*/
 /* -------------header------------ */
 .flex-container {
   display: flex;
@@ -32,15 +31,15 @@ header {
 }
 /* --------footer---------- */
 footer {
+  height: 100px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 5%;
+  justify-content: space-around;
+  
 }
 .icons {
   width: 60%;
   justify-content: space-around;
-  padding-top: 10%;
 }
 .transparent h1 {
   color: #38b6ff;
@@ -103,7 +102,7 @@ footer {
     font-size: .7em;
 
 }
-.apropos-p button{
+input[type="button"]{
     background-color: #38b6ff;
     border: unset;
     border-radius: 10px;
@@ -111,7 +110,7 @@ footer {
     color: white;
     font-weight: 700;
 }
-
+/* ----contact------ */
 .contact{
     text-align: center;
     padding: 5% 0;
@@ -121,22 +120,31 @@ footer {
 }
 .contact form{
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
-   
     width: 70%;
-    height: 150px; 
-    background-color: rgba(0, 0, 0, 0.534);
+    height: 200px;
 }
-input,textarea{
+.contact input,textarea{
     border: unset;
     border-radius: 5px;
+    
+}
+.contact textarea{
+  /* utilisateur ne peut pas modifier la taille  */
+  resize: none;
 }
 .contact h3{
     color: white;
 }
+.transparent-form{
+  background-color: rgba(0, 0, 0, 0.534);
 
+}
 
+/* =================================
+   = start Dashboard-Administrateur=
+   ================================= */
 
 .continer {
     display: grid;
