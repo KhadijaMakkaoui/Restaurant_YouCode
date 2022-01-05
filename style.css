@@ -1,16 +1,13 @@
 /* =================================
    = start Dashboard-Administrateur=
    ================================= */
-   * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-decoration: none;
 }
 /* -------------header------------ */
 .flex-container {
@@ -139,7 +136,7 @@ input,textarea{
     color: white;
 }
 
-}
+
 
 .continer {
     display: grid;
