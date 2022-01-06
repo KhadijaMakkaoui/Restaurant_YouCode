@@ -1,4 +1,118 @@
 
+.resto-cart{
+    
+    width: 310px;
+    height: 395px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(168, 166, 166) ;
+}
+.resto-plat-container img{
+    width: 100px;
+    
+}
+.resto-plat-container{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+
+}
+.reservation h4{
+    text-decoration: underline;
+}
+.resto-jour{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.resto-cart{
+    background-color:#F2FAFF;
+    
+}
+.resto-icon{
+    display:flex;
+     width: 138px;
+     /* height: 50px; */
+    position: relative;
+    flex-direction: column;
+   
+}
+.resto-porcent{
+    display: flex;
+}
+.resto-porcent img{
+    width: 55px; 
+}
+.resto-etoil img{
+  /* position: absolute; */
+  margin-top: 10px;
+  width: 60px;
+}
+.resto-plat h3{
+    margin-left: 5px;
+}
+.reservation{
+    /* display: flex;
+    flex-direction: column; */
+}
+.resto-commentaire img{
+    width: 30px;
+    height: 30px;
+
+}
+.resto-commentaire p{
+font-size: 13px;
+display: flex;
+align-items: center;
+}
+.resto-commentaire{
+    display: flex;
+    width: 180px;
+
+}
+.resto-review p{
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+.resto-commentaire p span{
+ color: gray;
+}
+.resto-all{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.resto-platimg{
+    height: 148px;
+    box-shadow: 2px 2px 2px 2px rgb(168, 166, 166) ;
+}
+.resto-plat h3{
+padding: 3px;
+    
+}
+@media (max-width:500px) {
+    .resto-all{
+        justify-content: center;
+    }
+    
+}
+@media (max-width:820px) {
+    .resto-all{
+        justify-content: space-between;
+    }
+    
+}
+@media (max-width:834px) {
+    .resto-all{
+        justify-content:space-between;
+      
+    }
+    
+}
+/* =================================
+   = start Dashboard-Administrateur=
+   ================================= */
+
 * {
   margin: 0;
   padding: 0;
