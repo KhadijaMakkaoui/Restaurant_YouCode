@@ -11,10 +11,24 @@
 
 <body>
   <div class="acceuil">
+    <div class="container-header-nav">
     <header class="flex-container">
       <img src="images/logoresto.png" alt="logo" class="logores" />
-      <img src="images/hamburgermenu.png" alt="hamburger menu" id="hamburgermenu" />
-    </header>
+      <div class="berger-icone">
+         <input type="checkbox" name="" id="menu">
+         <label for="menu"><img src="images/hamburgermenu.png" alt="hamburger menu" id="hamburgermenu" /></label>
+
+      </div>
+         </header>
+    <nav class="berger-menu ">
+      <ul class="flex-container">
+       <li> <a href="#">acceuil</a></li>
+        <li> <a href="#">à propos</a></li>
+        <li> <a href="#">contact</a></li>
+        <li><a href="#">se connecter</a></li>
+      </ul>
+    </nav>
+  </div>
     <main>
 
       <div class="transparent flex-container">
@@ -41,7 +55,9 @@
         déjeuner ici .
         Connectez-vous pour choisir vos plats de la semaine
       </p>
-      <input type="button" value="SE CONNECTER" class="btn-blue">
+      <a href="Connexion.html">
+        <input type="button" value="SE CONNECTER" class="btn-blue">
+      </a>
     </div>
 
   </div>
