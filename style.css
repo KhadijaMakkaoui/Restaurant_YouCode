@@ -348,6 +348,31 @@ align-items: center;
     font-size: 18px;
     padding: 4px;
 }
+@media (max-width:600px){
+    .resto-table-cart {
+        padding: 5px;
+        background-color: #F2FAFF;
+        width: 288px;
+        border-radius: 50px;
+        justify-content: center;
+        border: solid 1px black;
+        margin: 9px;
+    }
+    .tablcrud-jour-icon {
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+        align-items: baseline;
+    }
+    .resto-table-jour{
+        padding: 5px;
+    }
+    input[type=text]{
+        width:90px;
+    }
+}
+    
+
 
 
 
