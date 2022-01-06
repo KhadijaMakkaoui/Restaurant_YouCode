@@ -137,16 +137,16 @@ input,textarea{
  /*   =================================
       = start Dashboard-Administrateur=
       ================================= */
-.continer {
+.dash-continer {
   display: grid;
   height: 100vh;
-  background-color: #eee;
+  background-color: #FFFFFF;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 58px;
   grid-template-areas: "nav nav nav nav nav nav nav nav nav nav";
 }
 
-.nav {
+.dash-nav {
   grid-area: nav;
   background-color: #FFFFFF;
   grid-column-start: 2;
@@ -171,7 +171,7 @@ input,textarea{
   margin-left: 2px;
   width: 92%;
 }
-.items{
+.dach-items{
 
   grid-column: 1;
   justify-content: center;
@@ -179,7 +179,7 @@ input,textarea{
   display: grid;
   gap: 35%;
 }
-a{
+.dash-link a{
   color: #eee;
 }
 .dash-avatar {
@@ -196,7 +196,7 @@ a{
   border-radius: 50%
 }
 
-a:active{
+.dash-link a:active{
   border: 2px solid #37B4FC;
   width: 10%;
   background-color: #37B4FC;
