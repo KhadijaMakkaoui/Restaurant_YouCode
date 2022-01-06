@@ -41,18 +41,12 @@ footer {
   width: 60%;
   justify-content: space-around;
 }
-.transparent h1 {
-  color: #38b6ff;
-}
-.transparent p {
-  color: white;
-    font-weight: 700;
-    width: 80%;
-    text-align: center;
-}
+
 /* ----------acceuil----------- */
 .acceuil {
-  background-image: url(principale.jpg);
+  background-image: url(landing_connexion/images/principale.jpg);
+}
+.acceuil , .first-half {
   /* Full height */
   height: 100%;
    
@@ -67,6 +61,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.transparent h1 {
+  color: #38b6ff;
+}
+.transparent p , .first-half h1 {
+  color: white;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
 }
 /* ----- à propos ------------- */
 .container-relative{
@@ -102,7 +105,7 @@ footer {
     font-size: .7em;
 
 }
-input[type="button"]{
+.btn-blue{
     background-color: #38b6ff;
     border: unset;
     border-radius: 10px;
@@ -114,7 +117,7 @@ input[type="button"]{
 .contact{
     text-align: center;
     padding: 5% 0;
-    background-image: url(contact.jpg);
+    background-image: url(landing_connexion/images/contact.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -141,7 +144,30 @@ input[type="button"]{
   background-color: rgba(0, 0, 0, 0.534);
 
 }
-
+/* _______________________________
+     Se connecter
+__________________________________ */
+.connexion{
+  flex-direction: column;
+}
+.first-half{
+  background-image: url(landing_connexion/images/connexion.jpg);
+}
+.second-half{
+  
+}
+.second-half form{
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  background-color: green;
+}
+.last-section{
+  color: #38b6ff;
+}
+.last-section a{
+  color: gray;
+}
 /* =================================
    = start Dashboard-Administrateur=
    ================================= */
