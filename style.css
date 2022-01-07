@@ -460,7 +460,10 @@ grid-template-columns: repeat(5,1fr);
 }
 /* end style  sersh  */
 /* start style  table usert  */
-
+.dash-tableau{
+ margin-left: 5px;
+ margin-right: 5px;
+}
 .dash-useop{
   margin-top: 15px;
   margin-left: 5px;
