@@ -496,7 +496,8 @@ grid-template-columns: repeat(5,1fr);
 }
 
 /* end style  table usert  */
-/* boutton Ajouter  */
+
+/* start boutton Ajouter  */
 .dash-ajouter{
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -504,80 +505,14 @@ grid-template-columns: repeat(5,1fr);
 .dash-ajouter button{
   grid-column: 2;
 }
-/* boutton Ajouter  */
+/*  end boutton Ajouter  */
 
-.dash-grid{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(8,1fr);
-  grid-column: 3/11;
-  grid-row: 2/11;
-}
-.dash-btno button{
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgb(27 31 35 / 10%) 0 1px 0;
-  color: #fff;
-  cursor: pointer;
-  padding: 6px 16px;
-  
-}
-.dash-btno{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
 
-.dash-ser{
-  border: 2px solid rgb(219, 217, 217);
-  grid-column: 3/4;
-  height: 24px;
-  margin-top: 21px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dash-ser input{
-  border: none;
-  outline: none;
-  
-}
-.dash-use {
-  grid-column: 1;
-  display: flex;
-  margin-left: 5px;
-  justify-content:flex-start;
-  align-items: center;
-}
-.dash-id{
-  grid-column: 2;
-  display: flex;
-  margin-left: 5px;
-  justify-content:center;
-  align-items: center;
-}
-.dash-mail{
-  grid-column: 3;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-.dash-deuser{
-  grid-column: 4;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-.dash-oprpation{
-  grid-column: 5;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+
 
    /* =================================
       = end Dashboard-Administrateur  =
