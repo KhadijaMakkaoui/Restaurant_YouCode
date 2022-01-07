@@ -396,7 +396,7 @@ __________________________________ */
 .resto-table-cart{
     padding: 15px;
   background-color:#F2FAFF;
-    width: 400px;
+    width: 300px;
     border-radius: 50px ;
     justify-content: center;
     border: solid 1px black;
@@ -419,13 +419,14 @@ align-items: center;
 }
 @media (max-width:600px){
     .resto-table-cart {
-        padding: 5px;
-        background-color: #F2FAFF;
-        width: 288px;
-        border-radius: 50px;
-        justify-content: center;
-        border: solid 1px black;
-        margin: 9px;
+      padding: 5px;
+    background-color: #F2FAFF;
+    width: 286px;
+    border-radius: 50px;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 9px;
+}
     }
     .tablcrud-jour-icon {
         display: flex;
@@ -436,8 +437,8 @@ align-items: center;
     .resto-table-jour{
         padding: 5px;
     }
-    input[type=text]{
-        width:90px;
+    input[type=date]{
+        width: 97px;
     }
 }
     
