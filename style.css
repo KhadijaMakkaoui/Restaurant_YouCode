@@ -1,4 +1,147 @@
+/* """"""""""""""""""""""""""""""""""""""""""""""""""" */
+/* menu de la semaine */
+.apr-menu {
+    display: grid;
+    grid-template-rows: repeat(5,600px);
+    
+}
+.apr-lindi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+.apr-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+#apr-img {
+    
+    grid-column: 2;
+    grid-row: 1;
+}
+.apr-poulet{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.apr-salade{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: flex-end;
+}
+.apr-poisson{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-end;
+}
 
+.apr-poisson-img {
+    width: 180px;
+    height: 250px;
+    border-radius: 60px 0px 60px 0px ;
+   
+}
+.apr-poulet-img {
+    width: 180px;
+    height: 250px;
+    border-radius: 60px 0px 60px 0px ;
+}
+.apr-salade-img {
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+.apr-banane-img {
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+}
+.apr-information {
+    display: grid;
+    align-items: center;
+}
+#apr-information {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+.apr-info{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    /* align-content: center; */
+    height: 500px;
+    /* align-items:flex-end; */
+    
+}
+#apr-repas{
+    display: grid;
+}
+.apr-jour{
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+.apr-slc {
+    background-color: blue;
+    width: 180px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.apr-opt {
+    font-size: large;
+    font-weight: bold;
+}
+/* 5 statrs */
+.apr-rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.apr-rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.apr-rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    
+}
+.apr-rate:not(:checked) > label:before {
+    content: '★ ';
+    
+}
+.apr-rate > input:checked ~ label {
+    color: #4400fd;    
+}
+.apr-rate:not(:checked) > label:hover,
+.apr-rate:not(:checked) > label:hover ~ label {
+    color: #2d0bf1;  
+    
+}
+.apr-rate > input:checked + label:hover,
+.apr-rate > input:checked + label:hover ~ label,
+.apr-rate > input:checked ~ label:hover,
+.apr-rate > input:checked ~ label:hover ~ label,
+.apr-rate > label:hover ~ input:checked ~ label {
+    color: #0702ff;
+    
+}
+/* la fin de la menu du semaine */
 .resto-cart{
     
     width: 310px;
@@ -427,7 +570,7 @@ align-items: center;
     border: solid 1px black;
     margin: 9px;
 }
-    }
+    
     .tablcrud-jour-icon {
         display: flex;
         justify-content: space-between;
