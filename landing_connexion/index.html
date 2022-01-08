@@ -10,26 +10,27 @@
 </head>
 
 <body>
-  <div class="acceuil">
+  <div id="acceuil">
     <div class="container-header-nav">
     <header class="flex-container">
       <img src="images/logoresto.png" alt="logo" class="logores" />
-      <div class="berger-icone">
-         <input type="checkbox" name="" id="menu">
-         <label for="menu"><img src="images/hamburgermenu.png" alt="hamburger menu" id="hamburgermenu" /></label>
-
-      </div>
+      <!-- <div class="berger-icone"> -->
+        <label for="check-menu" class="berger-icone">
+         <input type="checkbox" name=""  id="check-menu" onclick="toggleMenu()" >
+         <img src="images/hamburgermenu.png" alt="hamburger menu" id="hamburger-icon" />
+        </label>
+      <!-- </div> -->
          </header>
-    <nav class="berger-menu ">
-      <ul class="flex-container">
-       <li> <a href="#">acceuil</a></li>
-        <li> <a href="#">à propos</a></li>
-        <li> <a href="#">contact</a></li>
-        <li><a href="#">se connecter</a></li>
+    <nav id="berger-menu" >
+      <ul class="flex-container" id="menu">
+       <li> <a href="#acceuil">acceuil</a></li>
+        <li> <a href="#apropos">à propos</a></li>
+        <li> <a href="#contact">contact</a></li>
+        <li><a href="Connexion.html">se connecter</a></li>
       </ul>
     </nav>
   </div>
-    <main>
+  <main>
 
       <div class="transparent flex-container">
         <h1>Restautant YouCode</h1>
@@ -38,13 +39,13 @@
           complet , entré, plat principale et finalement un desert .
         </p>
       </div>
-  </div>
-  <div class="container-relative">
-    <div class="espace-blanc">
     </div>
-    <div id="apropos-img">
+    <div class="container-relative" id="apropos">
+      <div class="espace-blanc">
+      </div>
+    <!-- <div id="apropos-img"> -->
       <img src="images/apropos.jpg" alt="salde">
-    </div>
+    <!-- </div> -->
     <div class="espace-bleu"></div>
     <div class="apropos-p flex-container">
       <h4>À PROPOS DE NOUS</h4>
@@ -60,19 +61,21 @@
       </a>
     </div>
 
-  </div>
-  <div class="contact ">
+    </div>
+    <div id="contact">
     <div class="transparent-form">
       <form class="flex-container ">
         <h3>CONTACTEZ-NOUS</h3>
         <input type="text" placeholder="Nom et prénom">
         <input type="email" placeholder="Adresse e-mail" name="" id="">
-        <textarea name="" placeholder="Message" id="" cols="10" rows="2" max></textarea>
-        <input type="button" value="ENVOYER" class="btn-blue">
+        <textarea name="" placeholder="Message" id="" cols="10" rows="2"></textarea>
+        
+          <input type="button" value="ENVOYER" class="btn-blue">
+       
       </form>
     </div>
 
-  </div>
+    </div>
 
 
   </main>
@@ -136,5 +139,18 @@
     </div>
   </footer>
 </body>
+<script>
+let menu=document.getElementById("berger-menu");
+function toggleMenu() {
+  if(document.querySelector('input[type="checkbox"]:checked')){
+    
+    menu.style.display="block";
+  }
+  else{
+    menu.style.display="none";
+   
+  }
+};
+</script>
 
 </html>
