@@ -90,6 +90,7 @@ align-items: center;
 padding: 3px;
     
 }
+
 @media (max-width:500px) {
     .resto-all{
         justify-content: center;
@@ -396,7 +397,7 @@ __________________________________ */
 .resto-table-cart{
     padding: 15px;
   background-color:#F2FAFF;
-    width: 300px;
+    width: 365px;
     border-radius: 50px ;
     justify-content: center;
     border: solid 1px black;
@@ -412,6 +413,8 @@ input[type=text]{
 display:flex;
 flex-direction: column;
 align-items: center;
+height: 490px;
+justify-content: center;
 }
 .resto-tablecrud-icon i{
     font-size: 18px;
@@ -421,13 +424,13 @@ align-items: center;
     .resto-table-cart {
       padding: 5px;
     background-color: #F2FAFF;
-    width: 286px;
+    width: 290px;
     border-radius: 50px;
     justify-content: center;
     border: solid 1px black;
     margin: 9px;
 }
-    }
+ 
     .tablcrud-jour-icon {
         display: flex;
         justify-content: space-between;
@@ -500,3 +503,128 @@ justify-content: space-around;
    /* =================================
       = end Dashboard-Administrateur  =
       ================================= */
+  /* =================================
+      = crud-resto =
+      ================================= */
+      .resto-cart1{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+.resto_cart-allcrud{
+  display: flex;
+  flex-direction: column;
+gap: 18px;
+  height: 712px;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+.resto_cart-allcrud h1{
+
+  text-align: center;
+}
+.resto-crud-foto {
+  border: solid 3px;
+  height: 152px;
+  width: 138px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+}
+.resto-crud-choix1{
+  
+    border: solid 1px black;
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 293px;
+    background-color: #F2FAFF;
+    box-shadow:  4px 4px 0 rgba(0,0,0,0.2);
+}
+.resto-crud-discript{
+  border: solid;
+  height: 51px;
+  width: 151px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.resto-crudplat{
+  border: solid 2px black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+margin: 5px;
+  
+}
+.resto-cart2{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: row;
+
+}
+.restocrud-jours{
+display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.restocrud-choix{
+padding: 2px;
+font-size: 22px; 
+} 
+.resto-button{
+  display: flex;
+  justify-content: center;
+
+}
+
+.resto-button button{
+  padding:4px;
+  color:honeydew;
+  background-color: green;
+}
+
+
+@media (max-width:600px){
+  .resto_cart-allcrud{
+
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    height: 1290px;
+
+  
+  
+  
+  }
+  .resto-cart2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+  .resto-cart1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+  
