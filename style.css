@@ -187,8 +187,8 @@ footer {
 
 /* ----------acceuil----------- */
 
-#acceuil {
-  background-image: url(landing_connexion/images/principale.jpg);
+ #acceuil{
+  background-image: url(images/principale.jpg);
 }
  #acceuil , .first-half {
   /* Full height */
@@ -200,7 +200,7 @@ footer {
   background-size: cover;
 }
 .transparent{
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(0, 0, 0, 0.644);
     /* height of the viewport */
     height: 100vh;
     flex-direction: column;
@@ -265,7 +265,10 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
-
+.apropos-p .btn-blue{
+  width: 50%;
+  align-self: center;
+}
 .btn-blue{
     background-color: #38b6ff;
     border: unset;
@@ -285,7 +288,7 @@ footer {
 #contact{
     text-align: center;
     padding: 5% 0;
-    background-image: url(landing_connexion/images/contact.jpg);
+    background-image: url(images/contact.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     height: 80vh;
@@ -329,7 +332,7 @@ __________________________________ */
   margin: 0 auto;
 }
 .first-half{
-  background-image: url(landing_connexion/images/connexion.jpg);
+  background-image: url(images/connexion.jpg);
 }
 .second-half{
   justify-content: center;
