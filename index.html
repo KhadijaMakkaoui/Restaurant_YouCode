@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page-restaurant YouCode</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div id="acceuil">
+    <header class="flex-container">
+      <img src="images/logoresto.png" alt="logo" class="logores" />
+      <nav class="desk-menu hover-menu">
+        <ul class="flex-container ">
+          <li> <a href="#acceuil">acceuil</a></li>
+          <li> <a href="#apropos">à propos</a></li>
+          <li> <a href="#contact">contact</a></li>
+          <li><a href="Connexion.html">se connecter</a></li>
+        </ul>
+      </nav>
+      <label for="check-menu" class="berger-icone">
+        <input type="checkbox"  id="check-menu" onclick="toggleMenu()">
+        <img src="images/hamburgermenu.png" alt="hamburger menu" id="hamburger-icon" />
+      </label>
+    </header>
+    <nav class="berger-menu hover-menu">
+      <ul class="flex-container" id="menu">
+        <li> <a href="#acceuil">acceuil</a></li>
+        <li> <a href="#apropos">à propos</a></li>
+        <li> <a href="#contact">contact</a></li>
+        <li><a href="Connexion.html">se connecter</a></li>
+      </ul>
+    </nav>
+      <div class="transparent flex-container">
+        <h1>Restautant YouCode</h1>
+        <p>
+          Chaque jour notre équipe staff restaurant vous prépare une repat
+          complet , entré, plat principale et finalement un desert .
+        </p>
+      </div>
+  </div>
+  <main>
+    <div class="container-relative" id="apropos">
+      <div class="flex-container back-colors">
+        <div class="espace-blanc"></div>
+        <div class="espace-bleu"></div>
+
+      </div>
+      <div class="flex-container apropos-img-p">
+
+        <img src="images/apropos.jpg" alt="salde">
+        <div class="apropos-p flex-container">
+          <h4>À PROPOS DE NOUS</h4>
+          <p>
+            La restaurant de YouCode est une retaurant qui
+            se situe à l’interieur de YouCode . Apprenants ,
+            staff youcode ou administration tous prennent leur
+            déjeuner ici . Notre mission est de préparer des plats variés et équilibrés
+            Connectez-vous pour choisir vos plats de la semaine
+          </p>
+          <!-- <a href="Connexion.html"> -->
+            <input type="button" value="SE CONNECTER" class="btn-blue">
+          <!-- </a> -->
+        </div>
+      </div>
+
+    </div>
+    <div id="contact">
+      <div class="transparent-form">
+        <form class="flex-container ">
+          <h3>CONTACTEZ-NOUS</h3>
+          <input type="text" placeholder="Nom et prénom">
+          <input type="email" placeholder="Adresse e-mail">
+          <textarea  placeholder="Message" cols="10" rows="2"></textarea>
+
+          <input type="button" value="ENVOYER" class="btn-blue">
+
+        </form>
+      </div>
+
+    </div>
+</main>
+
+  
+  <footer class="flex-container">
+    <img src="images/logoresto.png" alt="logo" class="logores" />
+    <div class="icons flex-container">
+     <img src="images/fb.svg" alt="icone fb">
+     <img src="images/twitter.svg" alt="icone twitter">
+     <img src="images/insta.svg" alt="icone insta">
+     <img src="images/linkedin.svg" alt="icone linkedin">
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
