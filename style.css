@@ -459,34 +459,7 @@ grid-template-columns: repeat(5,1fr);
   
 }
 /* end style  sersh  */
-/* start style  table usert  */
-.dash-tableau{
- margin-left: 5px;
- margin-right: 5px;
-}
-.dash-useop{
-  margin-top: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-top: 5px;
-  height: 10%;
-  border-top:1px solid rgb(163, 158, 158);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.dash-user-avatar{
-  display: flex;
-  align-items: center;
 
-}
-.dash-user-avatar img{
-  border-radius: 50%;
-  
-}
-.bi{
-  color: white;
-}
 .dash-btn{
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
@@ -497,16 +470,65 @@ grid-template-columns: repeat(5,1fr);
   padding: 6px 16px;
   
 }
+
+
+/* ===============================
+ start table user
+=============================== */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 7px;
+
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* #customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ */
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #121314;
+  color: white;
+}
+.dash-user-avatar {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.dash-tdflex{
+  display: flex;
+  align-items: center;
+  
+}
+.dash-btnop{
+    display: flex; 
+}
+.dash-btn{
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgb(27 31 35 / 10%) 0 1px 0;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 6px 16px;
+  display: flex;
+  margin-left: 5px;
+}
 .dash-d{
   background-color: red;
 }
-.dash-id{
-  /* margin-left: 38px; */
-}
-dash-st{
-  margin-right: -65px;
-}
-/* end style  table usert  */
+/* ===============================
+ end table user
+ =============================== */
 
 /* start boutton Ajouter  */
 .dash-ajouter{
@@ -589,20 +611,35 @@ padding: 5px;
       display: none;
     }
    }
-   @media only screen and (max-width: 360px) {
-   
+ 
+
+  @media only screen and (min-width: 768px) and (max-width: 889px) {
+    
     .dash-searshi{
-      display: none;
+      grid-column: 2/4;
     }
    }
 
-
-   @media  screen and (min-width: 320px) and (max-width: 428px) {
+   @media only screen and (max-width: 482px) {
     
+    .dash-table{
+      display:none;
+    }
+    .dash-searshi{
+      display:none;
+    }
+   }
+
+   @media  screen and (min-width: 320px) and (max-width: 428px) { 
     .dash-hide{
       display: none;
     }
-   
+    .dash-table{
+      display:none;
+    }
+    .dash-searshi{
+      display: none;
+    }
    }
 
 
@@ -650,7 +687,6 @@ padding: 5px;
    }
      
 
- /* --
  /* ---------------------
    -      media        -
    --------------------- */
