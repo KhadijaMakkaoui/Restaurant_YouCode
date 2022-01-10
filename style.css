@@ -1,4 +1,147 @@
+/* """"""""""""""""""""""""""""""""""""""""""""""""""" */
+/* menu de la semaine */
+.apr-menu {
+    display: grid;
+    grid-template-rows: repeat(5,600px);
+    
+}
+.apr-lindi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+.apr-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+#apr-img {
+    
+    grid-column: 2;
+    grid-row: 1;
+}
+.apr-poulet{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.apr-salade{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: flex-end;
+}
+.apr-poisson{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-end;
+}
 
+.apr-poisson-img {
+    width: 180px;
+    height: 250px;
+    border-radius: 60px 0px 60px 0px ;
+   
+}
+.apr-poulet-img {
+    width: 180px;
+    height: 250px;
+    border-radius: 60px 0px 60px 0px ;
+}
+.apr-salade-img {
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+.apr-banane-img {
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+}
+.apr-information {
+    display: grid;
+    align-items: center;
+}
+#apr-information {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+.apr-info{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    /* align-content: center; */
+    height: 500px;
+    /* align-items:flex-end; */
+    
+}
+#apr-repas{
+    display: grid;
+}
+.apr-jour{
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+.apr-slc {
+    background-color: blue;
+    width: 180px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.apr-opt {
+    font-size: large;
+    font-weight: bold;
+}
+/* 5 statrs */
+.apr-rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.apr-rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.apr-rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    
+}
+.apr-rate:not(:checked) > label:before {
+    content: '★ ';
+    
+}
+.apr-rate > input:checked ~ label {
+    color: #4400fd;    
+}
+.apr-rate:not(:checked) > label:hover,
+.apr-rate:not(:checked) > label:hover ~ label {
+    color: #2d0bf1;  
+    
+}
+.apr-rate > input:checked + label:hover,
+.apr-rate > input:checked + label:hover ~ label,
+.apr-rate > input:checked ~ label:hover,
+.apr-rate > input:checked ~ label:hover ~ label,
+.apr-rate > label:hover ~ input:checked ~ label {
+    color: #0702ff;
+    
+}
+/* la fin de la menu du semaine */
 .resto-cart{
     
     width: 310px;
@@ -90,20 +233,26 @@ align-items: center;
 padding: 3px;
     
 }
+
 @media (max-width:500px) {
     .resto-all{
+      display: flex;
         justify-content: center;
     }
     
 }
 @media (max-width:820px) {
     .resto-all{
+      display: flex;
         justify-content: space-between;
+        justify-content: center;
     }
     
 }
 @media (max-width:834px) {
     .resto-all{
+      display: flex;
+      justify-content: center;
         justify-content:space-between;
       
     }
@@ -130,23 +279,55 @@ footer {
 }
 header {
   justify-content: space-between;
-  padding: 2%;
+ padding: 2%;
+
 }
 .logores {
   width: 10%;
 }
-#hamburgermenu {
-  width: 4%;
-  /* centrer verticalement */
-  align-self: center;
+/* ----------menu-------- */
+#hamburger-icon {
+  width: 20px;
+  cursor: pointer;
 }
+
+#check-menu{
+  opacity: 0;
+}
+.berger-menu{
+  display: none;
+}
+
+.berger-menu ul{
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size:10px;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  text-align: center;
+  /* visibility: hidden; */
+}
+.hover-menu li{
+  padding: 2%;
+}
+.berger-menu a{
+  color: white;
+}
+.hover-menu li:hover{
+  background-color: #06a4ff;
+}
+.berger-icone label {
+  cursor:pointer;
+}
+
 /* --------footer---------- */
 footer {
   height: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  
 }
 .icons {
   width: 60%;
@@ -154,10 +335,11 @@ footer {
 }
 
 /* ----------acceuil----------- */
-.acceuil {
-  background-image: url(landing_connexion/images/principale.jpg);
+
+ #acceuil{
+  background-image: url(images/principale.jpg);
 }
-.acceuil , .first-half {
+ #acceuil , .first-half {
   /* Full height */
   height: 100%;
    
@@ -167,88 +349,120 @@ footer {
   background-size: cover;
 }
 .transparent{
-    background-color: rgba(0, 0, 0, 0.452);
-    height: 500px;
+    background-color: rgba(0, 0, 0, 0.644);
+    /* height of the viewport */
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .transparent h1 {
   color: #38b6ff;
+  text-align: center;
 }
-.transparent p , .first-half h1 {
+.transparent p {
   color: white;
     font-weight: 700;
     width: 80%;
     text-align: center;
 }
+.transparent{
+  /* Relative to 1% of the width of the viewport */
+  font-size: 2.5vw;
+}
 /* ----- à propos ------------- */
 .container-relative{
     position: relative;
+    
+}
+.back-colors{
+  flex-direction: column;
+  height: 100vh;
 }
 .espace-blanc{
-    height: 100px;
+  height: 30%;
 }
 .espace-bleu{
-    height: 200px;
+    height: 70%;
     background-color:#38b6ff ;
 }
-
-#apropos-img img{
+#apropos img{
     width: 70%;
+    max-width: 670px;
+    min-width: 260px;
     position: absolute;
-    top: 15px;
+    top: 15%;
     right: 0;
 }
+
 .apropos-p{
-    width: 50%;
-    height: 200px;
-    padding:0 5px;
+    width: 70%;
+    max-width: 450px;
+    min-width: 250px;
+    height: 50%;
     text-align: center;
     background-color: white;
-    /* background-color: blue; */
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 50px;
+    top: 35%; 
+    left: 5%;  
+     
+
 }
 .apropos-p p{
-    font-size: .7em;
-
+  width: 90%;
+  margin: 0 auto;
+}
+.apropos-p .btn-blue{
+  width: 50%;
+  align-self: center;
 }
 .btn-blue{
     background-color: #38b6ff;
     border: unset;
     border-radius: 10px;
-    padding: 5px;
-    color: white;
+    padding: 10px;
+    color: black;
     font-weight: 700;
+    cursor: pointer;
 }
+.btn-blue:hover, #contact .btn-blue:hover{
+  border-right: solid #026caa 3px;
+  border-bottom: solid #026caa 3px;
+  background-color: #00a0fd;
+}
+
 /* ----contact------ */
-.contact{
+#contact{
     text-align: center;
     padding: 5% 0;
-    background-image: url(landing_connexion/images/contact.jpg);
+    background-image: url(images/contact.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    height: 80vh;
 }
-.contact form{
+
+#contact form{
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
-    width: 70%;
-    height: 200px;
+    width: 50%;
+    max-width: 400px;
+    height: 60vh;
 }
-.contact input,textarea{
+#contact input,textarea{
     border: unset;
     border-radius: 5px;
-    
+    font-size: 10px;
+    padding: 10px;
 }
-.contact textarea{
+
+#contact textarea{
   /* utilisateur ne peut pas modifier la taille  */
   resize: none;
 }
-.contact h3{
+#contact h3{
     color: white;
 }
 .transparent-form{
@@ -261,25 +475,122 @@ __________________________________ */
 .connexion{
   flex-direction: column;
 }
+.connexion h1{
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+}
 .first-half{
-  background-image: url(landing_connexion/images/connexion.jpg);
+  background-image: url(images/connexion.jpg);
 }
 .second-half{
-  
+  justify-content: center;
+  height: 90vh;
+
 }
 .second-half form{
   flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  background-color: green;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  height: 70vh;
+}
+.second-half input[type="email"],.second-half input[type="password"]{
+  padding: 15px;
+  border:2px solid gray;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+.second-half input[type="submit"]{
+  padding: 20px;
+}
+.second-half input[type="email"]:hover,.second-half input[type="password"]:hover{
+  border: 2px solid #06a4ff;
+}
+.second-half h2{
+  text-align: center;
+}
+.second-half form div{
+  flex-direction: column;
 }
 .last-section{
-  color: #38b6ff;
+  color: #4676c1;
+  font-size: 10px;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-weight: 700;
 }
 .last-section a{
-  color: gray;
+  color: #575757;
+}
+.last-section a:hover{
+  text-decoration: underline;
+}
+/* ___________________
+responsive
+___________________ */
+/* Menu */
+@media (min-width:670px){
+  .berger-icone,#menu {
+    display: none;
+  }
+  
+  .desk-menu{
+    width: 100%; 
+    
+  }
+  .desk-menu ul{
+    list-style: none;
+    /* justify-content: space-between; */
+    text-transform: uppercase;
+    justify-content: flex-end;
+    
+  }
+  .desk-menu a{
+    color: white;
+  }
+}
+@media (max-width:670px){
+  
+  .desk-menu{
+    display: none;
+  }
+  
+}
+/* Page de Connexion */
+@media (min-width:670px){
+  .connexion{
+    flex-direction: row;
+    width: 90%;
+    margin: 10% auto;
+    box-shadow: 14px 15px 17px rgba(0, 0, 0, 0.25);
+  }
+  .first-half{
+   width: 50%;
+  }
+  .second-half form{
+    height: 90%;
+  }
+  .second-half{
+    width: 50%;
+  }
+}
+/* Landing page */
+@media (min-width:800px){
+/* à propos */
+
+.apropos-p{
+  
+  top: 40%;
+
+}
+.back-colors{
+height: 100vh;
 }
 
+}
 
  /*   =================================
       = start Dashboard-Administrateur=
@@ -390,6 +701,68 @@ __________________________________ */
   justify-content: space-around;
 
 }
+ /* =================================
+      = tableau crud  =
+      ================================= */
+.tablcrud-jour-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    align-items: baseline;
+   
+}
+.resto-table-cart{
+    padding: 15px;
+  background-color:#F2FAFF;
+    width: 365px;
+    border-radius: 50px ;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 9px;
+}
+input[type=text]{
+    
+    text-align:center;
+    border: solid 1px black;
+
+}
+.resto-tablecrud{
+display:flex;
+flex-direction: column;
+align-items: center;
+height: 490px;
+justify-content: center;
+}
+.resto-tablecrud-icon i{
+    font-size: 18px;
+    padding: 4px;
+}
+@media (max-width:600px){
+    .resto-table-cart {
+      padding: 5px;
+    background-color: #F2FAFF;
+    width: 290px;
+    border-radius: 50px;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 9px;
+}
+ 
+    
+    .tablcrud-jour-icon {
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+        align-items: baseline;
+    }
+    .resto-table-jour{
+        padding: 5px;
+    }
+    input[type=date]{
+        width: 97px;
+    }
+}
+    
 /* end style dstart cards  */
 
  /* sart  online user  */
@@ -696,3 +1069,128 @@ padding: 5px;
    /* =================================
       = end Dashboard-Administrateur  =
       ================================= */
+  /* =================================
+      = crud-resto =
+      ================================= */
+      .resto-cart1{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+.resto_cart-allcrud{
+  display: flex;
+  flex-direction: column;
+gap: 18px;
+  height: 712px;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+.resto_cart-allcrud h1{
+
+  text-align: center;
+}
+.resto-crud-foto {
+  border: solid 3px;
+  height: 152px;
+  width: 138px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+}
+.resto-crud-choix1{
+  
+    border: solid 1px black;
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 293px;
+    background-color: #F2FAFF;
+    box-shadow:  4px 4px 0 rgba(0,0,0,0.2);
+}
+.resto-crud-discript{
+  border: solid;
+  height: 51px;
+  width: 151px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.resto-crudplat{
+  border: solid 2px black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+margin: 5px;
+  
+}
+.resto-cart2{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: row;
+
+}
+.restocrud-jours{
+display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.restocrud-choix{
+padding: 2px;
+font-size: 22px; 
+} 
+.resto-button{
+  display: flex;
+  justify-content: center;
+
+}
+
+.resto-button button{
+  padding:4px;
+  color:honeydew;
+  background-color: green;
+}
+
+
+@media (max-width:600px){
+  .resto_cart-allcrud{
+
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    height: 1290px;
+
+  
+  
+  
+  }
+  .resto-cart2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+  .resto-cart1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+  
